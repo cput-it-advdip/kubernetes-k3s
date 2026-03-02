@@ -3,6 +3,8 @@ kind: Pod
 metadata:
   name: volume-test
   namespace: default
+  # This pod tests the K3s built-in local-path-provisioner.
+  # It mounts the PVC defined in pvc.yaml at /data.
 spec:
   containers:
   - name: volume-test
